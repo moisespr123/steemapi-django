@@ -1,7 +1,9 @@
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from steem import Steem
 from steem.post import Post
 
+@csrf_exempt
 def index(request):
     if request.method == 'POST':
         try:
