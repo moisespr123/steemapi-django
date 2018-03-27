@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.urls import path
 from . import index
+from . import checkApprovedAccounts
 from . import getCreatedDate
 from . import getFollowersCount
 from . import getFollowingCount
@@ -37,6 +38,7 @@ from . import vote
 
 urlpatterns = [
     path('', index.index, name='index'),
+    path('checkApprovedAccounts/', checkApprovedAccounts.index, name='index'),
     path('getCreatedDate/', getCreatedDate.index, name='index'),
     path('getFollowersCount/', getFollowersCount.index, name='index'),
     path('getFollowingCount/', getFollowingCount.index, name='index'),
