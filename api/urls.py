@@ -22,6 +22,7 @@ from . import getFollowingCount
 from . import getLocation
 from . import getPostBody
 from . import getPostCount
+from . import getPostDate
 from . import getPostTags
 from . import getPostTitle
 from . import getPostVotes
@@ -45,6 +46,7 @@ urlpatterns = [
     path('getLocation/', getLocation.index, name='index'),
     path('getPostBody/', getPostBody.index, name='index'),
     path('getPostCount/', getPostCount.index, name='index'),
+    path('getPostDate/', getPostDate.index, name='index'),
     path('getPostTags/', getPostTags.index, name='index'),
     path('getPostTitle/', getPostTitle.index, name='index'),
     path('getPostVotes/', getPostVotes.index, name='index'),
